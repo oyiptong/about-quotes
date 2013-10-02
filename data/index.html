@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="quoteApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Quote-O-Rama</title>
+    </head>
+    <body ng-cloak>
+        <div class="container" ng-controller="quoteCtrl">
+            <button class="btn btn-default quote-btn" ng-click="fetchQuote()">New Quote</button>
+            <div class="quote-card panel panel-default">
+                <div ng-show="currentQuote" class="quoteContainer">
+                    <p class="quote">{{currentQuote.quote}}</p>
+                    <span class="author"><a target="_blank" href="https://www.google.ca/search?q={{currentQuote.author|escape}}">{{currentQuote.author}}</a></span>
+                </div>
+                <div ng-hide="currentQuote">
+                    <p>No quote yet :-(</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

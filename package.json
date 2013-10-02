@@ -1,0 +1,9 @@
+{
+  "name": "about-quotes",
+  "fullName": "about-quotes",
+  "id": "jid1-B7vmMozoHFpWBw",
+  "description": "a basic add-on running angularjs providing quotes",
+  "author": "Olivier Yiptong",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
